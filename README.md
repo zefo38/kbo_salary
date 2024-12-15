@@ -61,6 +61,7 @@
 ```python
 sal_hitter_kr['salary'] = sal_hitter_kr['salary'].str.slice(0, -2)
 sal_hitter_kr['salary'] = pd.to_numeric(sal_hitter_kr['salary'])
+```
 
 2. 모델링 및 평가
 모델 선택: RandomForestClassifier 사용. Logistic Regression과 비교하여 성능 우수
