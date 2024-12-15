@@ -63,20 +63,20 @@ sal_hitter_kr['salary'] = sal_hitter_kr['salary'].str.slice(0, -2)
 sal_hitter_kr['salary'] = pd.to_numeric(sal_hitter_kr['salary'])
 ```
 
-2. 모델링 및 평가
-모델 선택: RandomForestClassifier 사용. Logistic Regression과 비교하여 성능 우수
-특성 선택: 상관계수 0.4 이상의 Feature만 채택(WAR, SLG 등)
-하이퍼파라미터 튜닝: Grid Search로 최적의 파라미터 결정
-모델 평가 결과:
+### 2. 모델링 및 평가
+- **모델 선택**: RandomForestClassifier 사용. Logistic Regression과 비교하여 성능 우수
+- **특성 선택**: 상관계수 0.4 이상의 Feature만 채택(WAR, SLG 등)
+- **하이퍼파라미터 튜닝**: Grid Search로 최적의 파라미터 결정
+- **모델 평가 결과**:
 정확도: 83%, Precision: 84%, Recall: 83%, F1-score: 83%.
 
-3. 데이터 분석 및 인사이트 도출
-선수의 성적과 연봉 간의 상관관계 분석
-데이터 기반으로 구체적인 연봉 예측 구간 설정
+### 3. 데이터 분석 및 인사이트 도출
+- 선수의 성적과 연봉 간의 상관관계 분석
+- 데이터 기반으로 구체적인 연봉 예측 구간 설정
 
-🔧 기술 스택
-언어: Python
-라이브러리 및 툴:
+### 🔧 기술 스택
+- 언어: Python
+- 라이브러리 및 툴:
 BeautifulSoup, Selenium (데이터 크롤링)
 pandas, numpy (데이터 분석)
 scikit-learn (모델링 및 평가)
